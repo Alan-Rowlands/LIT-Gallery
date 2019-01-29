@@ -1,0 +1,677 @@
+  
+body{
+   margin: 0;   
+   padding: 0;
+  
+}
+/* Style the navigation menu*/ 
+  .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #610208; 
+    width: 100%;  
+}
+
+.nav #menu {
+    display: none;
+    flex-direction: column; 
+    width: 100%;
+      
+}
+
+.nav #menu a{ 
+    padding: 2vh;
+    font-family: 'Roboto-regular';
+    text-decoration: none; 
+    color: #ce9159;
+    font-size: 1em;
+
+}
+
+
+.nav .icon{ 
+    color: #ce9159;
+    padding: 2vh;
+    background-color: white;
+    border-top: 2vh solid #730109;
+}
+  
+#menu a.visited{
+    background-color: white;
+    color: #ce9159;
+}
+
+#menu a:hover{
+    background-color: #ce9159;  
+    color: white;
+    font-family: 'PlayfairDisplaySC-Regular';      
+}
+ 
+
+/*Style the logo*/
+.header{
+    display: flex;
+    text-align: center;
+    width: 100%;
+ 
+}
+
+.header #logo{
+    background-color: #610208;
+    width: 100%;
+    padding: 2vh;
+    border-bottom: 2vh solid #730109;
+    cursor: pointer;
+  
+}
+
+#logo img{
+    height: auto;
+    width: 16%;
+}
+
+
+/*Style the searchbar*/
+
+form #search{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 5%;
+    flex-direction: row;
+
+}
+
+form #search input[type=text]{
+    text-align: left;
+    height: auto;
+    
+     
+}
+
+form #searchbar{
+    width: 85%;
+    border-color: #ce9159;
+    border-style: solid;
+    font-family:'Roboto-regular';
+    height: auto;
+
+}
+
+form #search button{
+    text-align: center;
+    width: 15%;
+    height: auto;
+    color: #ce9159;
+    background-color: #730109;
+    cursor: pointer;
+    border-style: none;
+    border-left-width: 0px;
+   
+}
+
+#search button:hover{
+    background-color: #ce9159;  
+    color: white;
+    font-family: 'PlayfairDisplaySC-Regular';      
+}  
+
+/*Style the Profile page*/
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    margin: 2% 2% 20% 2%;  
+}
+
+#proftop{
+   display:flex;
+   flex-direction: row;
+   width: 100%;
+
+}
+
+
+#profoimageside{
+   width: 25%;
+}
+
+
+#profoimageside img{
+    padding-top: 5%;
+    border-color: #ce9159;
+    border-radius: 50%;
+    width: 100%;
+       
+}
+
+#bio{ 
+    display: flex;
+    flex-direction: column;
+    padding-left: 4vw;
+    width: 100%;
+    height: auto;
+    
+}
+
+#biohead{
+    font-family: 'Roboto-regular';
+    height: 20%;
+    
+      
+}
+
+#biohead h1{
+    font-size: 1.4em;
+    text-align: left;
+    
+}
+
+#bioinput{
+    font-family: 'Roboto-light';
+    font-size: 1em;
+    width: 100%;
+   
+}
+
+#bioinput p{
+    font-size: 0.8em;
+    padding-top: 2%;
+}
+
+#profbuttons a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5%;
+    text-decoration: none;
+    
+}
+
+#editprof{
+    margin: 1vw;
+    color: #ce9159;
+    background-color: #730109 ;
+    font-family: 'Roboto-regular';
+    font-size: 0.55em;
+    border-style:none;
+    cursor: pointer;
+}
+
+#accountset{
+   margin: 1vw;
+   font-family: 'Roboto-regular';
+   font-size: 0.55em; 
+   cursor: pointer;
+   border-style: none; 
+   background-color: #730109 ;
+   color: #ce9159;
+}
+
+#profbuttons button:hover {
+    background-color: #ce9159;  
+    color: white;
+    font-family: 'PlayfairDisplaySC-Regular';      
+}
+
+
+/*Style profile Gallery*/
+
+
+#profbottom{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding-top: 5%;    
+    
+}
+
+.profgallery{
+   padding: 2%;
+}
+
+.profgallery img{
+   width: 100%;
+   height: 20vw;
+}
+
+ .desc{
+  height: 50%;
+}
+
+.fa fa-star{
+
+}
+
+.descreview{
+   font-family:  'Roboto-regular';
+   font-size: .8em;
+}
+
+.uploaddesc{
+    font-family: 'Roboto-light';
+    font-size: .6em;
+    
+}
+
+.responsive{
+    width: 33.3333%;  
+}
+
+.checked{
+    color: #ce9159;
+}
+
+
+                                                            /*Hompage*/
+
+.home{
+    margin: 2% 2% 2% 2%; 
+}
+
+
+.homecont{
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    text-align: center;
+    background-image: url(../img/backgroundimg.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10vh; 
+}
+
+#signin{
+    display: flex;
+    align-self:center;
+    padding: 5%;
+}
+
+#signin form{
+    display:flex;
+    flex-direction: column; 
+ 
+}
+
+.signininput{
+    font-size: 1.4em;  
+    font-family: 'Roboto-light';
+    box-shadow: .2em .2em #ce9159;
+}
+
+#signinbutton{
+    color: #ce9159;
+    background-color: #730109;
+    font-family: 'Roboto-regular';
+    font-size: 1.5em;
+    border-style:none;
+    cursor: pointer;
+    box-shadow: .2em .2em #ce9159;
+
+}
+
+#signupbutton{
+    color: #730109; 
+    background-color: #ce9159;
+    font-family: 'Roboto-regular';
+    font-size: 1.5em;
+    border-style:none;
+    cursor: pointer;
+    box-shadow: .2em .2em #730109;
+    
+}
+
+#signin h1{ 
+    color: #ce9159;
+    font-family: 'Roboto-regular';
+    font-size: 1.5em;
+}
+
+
+
+                                                                        /*ShowsPage*/
+
+.shows{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;  
+    word-wrap: break-word;
+    margin-bottom: 20%;
+
+}
+
+
+.show{
+    
+    background-color: #730109;
+    width: 100%;
+    border-radius: 1em;
+    margin: 2%;
+    
+}
+
+
+.showtop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.showtop img{
+    width: 40%;
+    height: 100%;
+    padding: 2%;
+}
+
+.showdesc{
+    display: flex;
+    flex-direction: column;
+    color:#CE9159;
+     width: 50%;
+    
+}
+
+.showdesc h4{
+    font-family: 'PlayfairDisplaySC-Regular';
+    font-size: 1em;
+}
+
+.showdesc p{
+    font-family: 'Roboto-light';
+    font-size: .9em;
+}
+
+.showbtns{
+   padding: 2%;
+  text-align: center;
+}
+
+.showButtons{
+    color:#730109;
+    background-color: #ce9159;
+    text-align: center;
+    border-radius: .5em;
+    border-style: none;
+    cursor: pointer;
+    width: 40%;
+font-family: 'Roboto-regular';
+    
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+.profile{
+    margin: 2% 4% 10% 4%;  
+}
+ 
+    
+form #search{ 
+    width: 30%;
+    padding-left: 70%;
+}
+
+
+#biohead h1{
+    font-size: 1.6em;    
+}    
+    
+#bioinput{
+    font-size: 1.2em;
+   
+}
+    
+#editprof{
+    font-size: 0.8em;
+}
+
+#accountset{
+   font-size: 0.8em; 
+}
+
+.descreview{
+   font-size: 1em;
+}
+
+.uploaddesc{
+    font-size: .8em;
+    
+} 
+
+ .homecont{
+   
+    
+}
+
+    
+ .shows{
+  margin-bottom: 10%;
+}
+   
+    
+.show{
+    width: 46%;
+  
+}
+    
+
+.showdesc h4{
+    font-size: 1.1em;
+}
+
+.showdesc p{
+
+    font-size: 1em;    
+}
+
+.showButtons{
+    
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+.profile{
+    margin: 5% 5% 5% 25%;  
+}  
+    
+.nav {
+    position: fixed;
+    left: 0;
+    justify-content: center;
+    height: 100%; 
+    width: 20%;       
+}
+
+ .nav #menu {
+    display: flex;
+}   
+    
+    
+.nav #menu a{
+    padding: 4vh;
+    font-size: 1.1em; 
+}
+
+.nav .icon{ 
+    display: none;    
+}
+                                              
+.header{
+
+    position: fixed;
+    left: 0;
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.header #logo{
+    background-color: #610208;
+    border-style: none;
+    padding-top: 8vh;
+    width: 100%;
+}
+
+#logo img{
+    height: auto;
+    width: 50%;
+    max-width: 150px;
+}
+
+.nav #menu {
+    display: flex;
+}
+    
+form #search{ 
+    width: 25%;
+    padding-left: 75%;
+}
+
+
+#biohead h1{
+    font-size: 1.7em;    
+}    
+    
+#bioinput{
+    font-size: 1.3em;
+   
+}
+    
+#editprof{
+    font-size: 0.8em;
+}
+
+#accountset{
+   font-size: 0.8em; 
+}
+
+.descreview{
+   font-size: 1.1em;
+}
+
+.uploaddesc{
+    font-size: .9em;
+    
+} 
+  
+.profgallery{
+   padding: 2%;
+}
+
+.profgallery img{
+   width: 100%;
+   height: 12vw;
+}  
+    
+.responsive{
+    width: 25%; 
+}    
+  
+    
+ .home{
+    margin: 2% 2% 2% 20%; 
+}   
+ 
+.homecont{
+    
+}   
+    
+.shows{
+  margin: 5% 5% 5% 25%;
+    
+}
+   
+    
+.show{
+   width: 30%;
+  
+}
+    
+
+.showdesc h4{
+    font-size: 1.2em;
+}
+
+.showdesc p{
+
+    font-size: 1 em;    
+}
+
+.showButtons{
+    font-size: 1em;   
+}
+    
+    
+}
+
+
+
+
+@media screen and (min-width: 1920px) {  
+    .profile{
+    margin: 10% 10% 10% 30%;  
+} 
+ 
+ .nav #menu {
+    display: flex;
+}
+    
+.nav #menu a{
+    padding: 4vh;
+    font-size: 1.2em; 
+}
+
+#biohead h1{
+    font-size: 1.8em;    
+}    
+    
+#bioinput{
+    font-size: 1.4em;
+   
+}
+    
+#editprof{
+    font-size: 1em;
+}
+
+#accountset{
+   font-size: 1em; 
+}
+
+.descreview{
+   font-size: 1.2em;
+}
+
+.uploaddesc{
+    font-size: 1em;
+    
+}    
+    
+}
+
+
+/*Fonts*/
+
+ @font-face{
+         font-family: 'PlayfairDisplaySC-Regular';
+         src: url('../fonts/PlayfairDisplaySC-Regular.ttf');
+         }
+
+@font-face{
+         font-family: 'Roboto-regular';
+         src: url('../fonts/Roboto-Regular.ttf');
+         }
+@font-face{
+         font-family: 'Roboto-light';
+         src: url('../fonts/Roboto-Light.ttf');
+         }

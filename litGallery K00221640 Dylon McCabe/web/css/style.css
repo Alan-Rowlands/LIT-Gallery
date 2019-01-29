@@ -1,0 +1,141 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    background: 000000;
+    font-family: sans-serif;
+}
+
+.container
+{
+    width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.image-resize {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.container .box .imgBox
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img
+{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img
+{
+    transform: scale(1.2);
+}
+
+.container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(115,1,9,.4);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details
+{
+    transform: scaleY(1); 
+}
+
+.container .box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ce9159;
+}
+
+.container .box .details .content p
+{
+    margin: 10px 0 0;
+    padding: 0; 
+}
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #610208; 
+    width: 100%;  
+}
+
+.nav #menu {
+    display: none;
+    flex-direction: column; 
+    width: 100%;
+      
+}
+
+.nav #menu a{ 
+    padding: 2vh;
+    font-family: 'Roboto-regular';
+    text-decoration: none; 
+    color: #ce9159;
+    font-size: 1em;
+
+}
+
+.nav .icon{ 
+    color: #ce9159;
+    padding: 2vh;
+    background-color: white;
+    border-top: 2vh solid #730109;
+}
+  
+#menu a.active {
+    background-color: #730109;
+    color: #ce9159;
+}
+
+#menu a:hover {
+    background-color: #ce9159;  
+    color: white;
+    font-family: 'PlayfairDisplaySC-Regular';      
+}
+
+#logo img{
+    height: auto;
+    width: 16%;
+}
